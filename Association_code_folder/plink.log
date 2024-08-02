@@ -1,0 +1,37 @@
+PLINK v1.90p 64-bit (11 Dec 2023)
+Options in effect:
+  --allow-extra-chr
+  --bfile /ichrogene/project/temp/gylee/1.WES/2.gatk_result/skin.1004//6.plinkQC/skin.1004.bfile
+  --ld 22:45170962:A:G 22:45171031:C:A
+
+Hostname: ichrogene-dev
+Working directory: /ichrogene/project/temp/gylee/Code/snpeff_code_folder/skin.code
+Start time: Wed Jul 31 16:24:22 2024
+
+Random number seed: 1722410662
+64316 MB RAM detected; reserving 32158 MB for main workspace.
+177578 variants loaded from .bim file.
+1000 people (0 males, 0 females, 1000 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to plink.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1000 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.989871.
+177578 variants and 1000 people pass filters and QC.
+Note: No phenotypes present.
+
+--ld 22:45170962:A:G 22:45171031:C:A:
+
+   R-sq = 1              D' = 1
+
+   Haplotype     Frequency    Expectation under LE
+   ---------     ---------    --------------------
+          AC      0.4655                  0.216690
+          GC      0                       0.248810
+          AA      0                       0.248810
+          GA      0.5345                  0.285690
+
+   In phase alleles are AC/GA
+
+
+End time: Wed Jul 31 16:24:22 2024

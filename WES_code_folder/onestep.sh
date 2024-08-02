@@ -1,8 +1,9 @@
 #!/bin/bash
 Input=$1
-singularity exec --bind /ichrogene/:/ichrogene/ /ichrogene/project/temp/gylee/Singularity/gatk.sif bash 4.db.largeSample.240725.sh ${Input}
+#singularity exec --bind /ichrogene/:/ichrogene/ /ichrogene/project/temp/gylee/Singularity/gatk.sif bash 4.db.largeSample.240725.sh ${Input}
 
-singularity exec --bind /ichrogene/:/ichrogene/ /ichrogene/project/temp/gylee/Singularity/gatk.sif bash 4-2.db.largeSample.GenotypeGVCFs.sh
+#singularity exec --bind /ichrogene/:/ichrogene/ /ichrogene/project/temp/gylee/Singularity/gatk.sif bash 4-2.db.largeSample.GenotypeGVCFs.sh ${Input}
+singularity exec --bind /ichrogene/:/ichrogene/ /ichrogene/project/temp/gylee/Singularity/gatk.sif bash temp.4-2.db.largeSample.GenotypeGVCFs.sh ${Input}
 
 singularity exec --bind /ichrogene/:/ichrogene/ /ichrogene/project/temp/gylee/Singularity/gatk.sif bash 5.merge.sh ${Input}
 

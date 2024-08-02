@@ -1,0 +1,15 @@
+bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur3_2,Sur4_3,Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur3_2
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur4_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur3_2
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur4_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur3_2,Sur4_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur3_2,Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur4_3,Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur3_2,Sur4_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur3_2,Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur2_6,Sur4_3,Sur5_3
+#bash 13.SAIGE.analysis.corne.sh skin.1004 32 99999 corneometer Sur3_2,Sur4_3,Sur5_3

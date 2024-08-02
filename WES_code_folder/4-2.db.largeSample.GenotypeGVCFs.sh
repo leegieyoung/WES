@@ -21,90 +21,17 @@ Even2=(4 10 16 22)
 Even3=(6 12 18 "Y")
 chrM="M"
 Other=("X" "Y" "M")
+mkdir -p /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs
 
 #GenotypeGVCFs
-for A in "${Odd1[@]}"
+for A in "${Seq[@]}"
 do
 rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz
 echo "======================================"
 echo ${A}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
- -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
- -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${A} \
- -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${A}.log 2>&1 &
-
-done
-wait
-
-for A in "${Even1[@]}"
-do
-rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz
-echo "======================================"
-echo ${A}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
- -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
- -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${A} \
- -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${A}.log 2>&1 &
-
-done
-wait
-
-for A in "${Odd2[@]}"
-do
-rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz
-echo "======================================"
-echo ${A}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
- -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
- -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${A} \
- -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${A}.log 2>&1 &
-
-done
-wait
-
-for A in "${Even2[@]}"
-do
-rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz
-echo "======================================"
-echo ${A}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
- -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
- -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${A} \
- -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${A}.log 2>&1 &
-
-done
-wait
-
-for A in "${Odd3[@]}"
-do
-rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz
-echo "======================================"
-echo ${A}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
+gatk --java-options "-Xms2G -Xmx2G -XX:ParallelGCThreads=2" GenotypeGVCFs \
  -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
  -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${A} \
  -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${A}.log 2>&1 &
 done
 wait
-
-for A in "${Even3[@]}"
-do
-rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz
-echo "======================================"
-echo ${A}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
- -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
- -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${A} \
- -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${A}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${A}.log 2>&1 &
-done
-wait
-
-rm -rf /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${chrM}.vcf.gz
-echo "======================================"
-echo ${chrM}
-gatk --java-options "-Xms12G -Xmx12G -XX:ParallelGCThreads=4" GenotypeGVCFs \
- -R /ichrogene/project/temp/gylee/1.WES/REFERENCE/fasta/Homo_sapiens_assembly38.fasta \
- -V gendb:///ichrogene/project/temp/gylee/1.WES/${Input}_chr${chrM} \
- -O /ichrogene/project/temp/gylee/1.WES/2.gatk_result/${Input}/GenotypeGVCFs/chr${chrM}.vcf.gz > /ichrogene/project/temp/gylee/1.WES/dbLOG/GenotypeGVCFs.chr${chrM}.log 2>&1 &
-wait
-

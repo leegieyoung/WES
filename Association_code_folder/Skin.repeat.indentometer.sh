@@ -1,0 +1,15 @@
+bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur3_2,Sur4_3,Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur3_2
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur4_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur3_2
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur4_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur3_2,Sur4_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur3_2,Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur4_3,Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur3_2,Sur4_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur3_2,Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur2_3,Sur4_3,Sur5_3
+#bash 13.SAIGE.analysis.sh skin.1004 32 99999 indentometer Sur3_2,Sur4_3,Sur5_3
